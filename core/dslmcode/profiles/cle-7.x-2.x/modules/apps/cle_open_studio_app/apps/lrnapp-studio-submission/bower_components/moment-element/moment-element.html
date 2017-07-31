@@ -4,7 +4,7 @@ Copyright (c) 2016 Abdón Rodríguez Davila (@abdonrd). All rights reserved.
 This code may only be used under the MIT style license found at https://abdonrd.github.io/LICENSE.txt
 -->
 
-<link rel="import" href="../polymer/polymer.html">
+ 
 <link rel="import" href="moment-import.html">
 
 <!--
@@ -59,8 +59,8 @@ Examples:
         },
 
         /**
-         * Relative time using [moment time from now](http://momentjs.com/docs/#/displaying/fromnow/)
-         * or [moment Time from datetime](http://momentjs.com/docs/#/displaying/from/).
+         * Relative time using [momen time from now](http://momentjs.com/docs/#/displaying/fromnow/)
+         * or [momen Time from datetime](http://momentjs.com/docs/#/displaying/from/).
          */
         from: {
           type: String,
@@ -68,8 +68,8 @@ Examples:
         },
 
         /**
-         * Relative time using [moment Time to now](http://momentjs.com/docs/#/displaying/tonow/)
-         * or [moment Time to datetime](http://momentjs.com/docs/#/displaying/to/).
+         * Relative time using [momen Time to now](http://momentjs.com/docs/#/displaying/tonow/)
+         * or [momen Time to datetime](http://momentjs.com/docs/#/displaying/to/).
          */
         to: {
           type: String,
@@ -90,12 +90,10 @@ Examples:
       ],
 
       /**
-       * Recomputes the output.
+       * Recomputes the output
        */
       update: function() {
-        this._computeOutput(
-          this.datetime, this.inputFormat, this.outputFormat, this.from, this.to
-        );
+        this._computeOutput(this.datetime, this.inputFormat, this.outputFormat, this.from, this.to);
       },
 
       _computeOutput: function(datetime, inputFormat, outputFormat, from, to) {

@@ -19,12 +19,12 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
   "homepage": "https://github.com/LRNWebcomponents/lrnsys-button",
-  "version": "0.3.0",
-  "_release": "0.3.0",
+  "version": "0.3.1",
+  "_release": "0.3.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.3.0",
-    "commit": "6632b13a333794d55a8378fe94a370a39fe73149"
+    "tag": "0.3.1",
+    "commit": "38f5de24dab348e2ab21fe2c3788495bfc00822d"
   },
   "_source": "https://github.com/LRNWebcomponents/lrnsys-button.git",
   "_target": "^0.3.0",

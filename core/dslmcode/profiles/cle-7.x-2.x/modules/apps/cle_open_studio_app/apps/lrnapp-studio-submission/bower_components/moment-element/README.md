@@ -1,6 +1,5 @@
-[![Build status](https://travis-ci.org/abdonrd/moment-element.svg?branch=master)](https://travis-ci.org/abdonrd/moment-element)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/abdonrd/moment-element)
-
+[![Build status][travis-image]][travis-url]
+[![Published on webcomponents.org][webcomponents-image]][webcomponents-url]
 
 ## \<moment-element\>
 
@@ -14,13 +13,11 @@ Example:
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="moment-element.html">
     <next-code-block></next-code-block>
-    <custom-style>
-      <style is="custom-style">
-        moment-element {
-          display: block;
-        }
-      </style>
-    </custom-style>
+    <style is="custom-style">
+      moment-element {
+        display: block;
+      }
+    </style>
   </template>
 </custom-element-demo>
 ```
@@ -29,3 +26,8 @@ Example:
 <moment-element></moment-element>
 <moment-element datetime="1991-12-31" output-format="MMM DD[,] YYYY"></moment-element>
 ```
+
+[travis-image]: https://travis-ci.org/abdonrd/moment-element.svg?branch=master
+[travis-url]: https://travis-ci.org/abdonrd/moment-element
+[webcomponents-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg
+[webcomponents-url]: https://beta.webcomponents.org/element/abdonrd/moment-element

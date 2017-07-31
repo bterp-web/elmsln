@@ -1,4 +1,4 @@
-<link rel="import" href="../polymer/polymer.html">
+ 
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../materializecss-styles/colors.html">
@@ -49,7 +49,7 @@ A LRN element
       }
     </style>
     <a id="lrnsys-button-link" href$="[[href]]" tabindex="-1" data-prefetch-hover$="[[prefetch]]">
-      <paper-button id="button" raised="[[raised]]" class$="[[class]] [[color]] [[textColor]]">
+      <paper-button id="button" raised="[[raised]]" class$="[[class]] [[color]] [[textColor]]" disabled$="[[disabled]]">
         <template is="dom-if" if="[[icon]]">
           <iron-icon icon$="[[icon]]" id="icon"></iron-icon>
         </template>
@@ -132,6 +132,13 @@ A LRN element
           type: String,
         },
         /**
+         * Disabled state.
+         */
+        disabled: {
+          type: Boolean,
+          value: false,
+        },
+        /**
          * Tracks if focus state is applied
          */
         focusState: {
@@ -141,7 +148,7 @@ A LRN element
       },
       tapEventOn: function(e) {
         let root = this;
-        if (typeof root.hoverClass !== typeof undefined) {
+        if (typeof root.hoverClass !== typeof undefined && !root.disabled) {
           // break class into array
           var classes = root.hoverClass.split(' ');
           // run through each and add or remove classes
@@ -154,7 +161,7 @@ A LRN element
       },
       tapEventOff: function(e) {
         let root = this;
-        if (typeof root.hoverClass !== typeof undefined) {
+        if (typeof root.hoverClass !== typeof undefined && !root.disabled) {
           // break class into array
           var classes = root.hoverClass.split(' ');
           // run through each and add or remove classes
@@ -172,7 +179,7 @@ A LRN element
         let root = this;
         this.fire('focus-changed', {focus: root.focusState});
         // see if it has hover classes
-        if (typeof root.hoverClass !== typeof undefined) {
+        if (typeof root.hoverClass !== typeof undefined && !root.disabled) {
           // break class into array
           var classes = root.hoverClass.split(' ');
           // run through each and add or remove classes
