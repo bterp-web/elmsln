@@ -18,8 +18,6 @@
     "Gruntfile.js",
     "Moment.js.nuspec",
     "package.js",
-    "package.json",
-    "ISSUE_TEMPLATE.md",
-    "typing-tests"
+    "package.json"
   ]
 }
